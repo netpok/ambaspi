@@ -1,0 +1,716 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml apb_spi.twx apb_spi.ncd -o apb_spi.twr apb_spi.pcf
+
+Design file:              apb_spi.ncd
+Physical constraint file: apb_spi.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock pclk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+paddr<0>    |    6.079(F)|      SLOW  |   -1.620(F)|      FAST  |pclk_BUFGP        |   0.000|
+paddr<1>    |    5.792(F)|      SLOW  |   -1.389(F)|      FAST  |pclk_BUFGP        |   0.000|
+paddr<2>    |    5.816(F)|      SLOW  |   -1.459(F)|      FAST  |pclk_BUFGP        |   0.000|
+paddr<3>    |    4.810(F)|      SLOW  |   -0.591(F)|      SLOW  |pclk_BUFGP        |   0.000|
+paddr<4>    |    5.619(F)|      SLOW  |   -1.249(F)|      FAST  |pclk_BUFGP        |   0.000|
+paddr<5>    |    5.986(F)|      SLOW  |   -1.539(F)|      FAST  |pclk_BUFGP        |   0.000|
+paddr<6>    |    5.944(F)|      SLOW  |   -1.486(F)|      FAST  |pclk_BUFGP        |   0.000|
+paddr<7>    |    6.002(F)|      SLOW  |   -1.534(F)|      FAST  |pclk_BUFGP        |   0.000|
+paddr<8>    |    6.833(F)|      SLOW  |   -2.050(F)|      FAST  |pclk_BUFGP        |   0.000|
+paddr<9>    |    6.790(F)|      SLOW  |   -2.051(F)|      FAST  |pclk_BUFGP        |   0.000|
+paddr<10>   |    7.113(F)|      SLOW  |   -2.242(F)|      FAST  |pclk_BUFGP        |   0.000|
+paddr<11>   |    6.790(F)|      SLOW  |   -2.022(F)|      FAST  |pclk_BUFGP        |   0.000|
+paddr<12>   |    7.378(F)|      SLOW  |   -2.393(F)|      FAST  |pclk_BUFGP        |   0.000|
+paddr<13>   |    6.391(F)|      SLOW  |   -1.700(F)|      FAST  |pclk_BUFGP        |   0.000|
+paddr<14>   |    7.015(F)|      SLOW  |   -2.090(F)|      FAST  |pclk_BUFGP        |   0.000|
+paddr<15>   |    6.909(F)|      SLOW  |   -2.054(F)|      FAST  |pclk_BUFGP        |   0.000|
+penable     |    5.569(F)|      SLOW  |   -1.325(F)|      FAST  |pclk_BUFGP        |   0.000|
+prst        |    4.704(F)|      SLOW  |   -0.830(F)|      FAST  |pclk_BUFGP        |   0.000|
+psel        |    5.664(F)|      SLOW  |   -1.371(F)|      FAST  |pclk_BUFGP        |   0.000|
+pwdata<0>   |   -0.131(F)|      FAST  |    1.396(F)|      SLOW  |pclk_BUFGP        |   0.000|
+pwdata<1>   |   -0.162(F)|      FAST  |    1.459(F)|      SLOW  |pclk_BUFGP        |   0.000|
+pwdata<2>   |   -0.130(F)|      FAST  |    1.395(F)|      SLOW  |pclk_BUFGP        |   0.000|
+pwdata<3>   |   -0.161(F)|      FAST  |    1.458(F)|      SLOW  |pclk_BUFGP        |   0.000|
+pwdata<4>   |   -0.070(F)|      FAST  |    1.335(F)|      SLOW  |pclk_BUFGP        |   0.000|
+pwdata<5>   |    1.047(F)|      SLOW  |   -0.124(F)|      SLOW  |pclk_BUFGP        |   0.000|
+pwdata<6>   |    1.189(F)|      SLOW  |   -0.262(F)|      SLOW  |pclk_BUFGP        |   0.000|
+pwrite      |    5.982(F)|      SLOW  |   -1.579(F)|      FAST  |pclk_BUFGP        |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock pclk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+cs0         |        11.300(F)|      SLOW  |         4.759(F)|      FAST  |pclk_BUFGP        |   0.000|
+cs1         |        11.050(F)|      SLOW  |         4.583(F)|      FAST  |pclk_BUFGP        |   0.000|
+cs2         |        11.188(F)|      SLOW  |         4.787(F)|      FAST  |pclk_BUFGP        |   0.000|
+cs3         |        11.031(F)|      SLOW  |         4.694(F)|      FAST  |pclk_BUFGP        |   0.000|
+irq         |        10.777(F)|      SLOW  |         4.371(F)|      FAST  |pclk_BUFGP        |   0.000|
+sclk        |        11.595(F)|      SLOW  |         4.692(F)|      FAST  |pclk_BUFGP        |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock pclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+pclk           |         |         |         |    3.056|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+paddr<0>       |prdata<0>      |   10.627|
+paddr<0>       |prdata<1>      |   10.524|
+paddr<0>       |prdata<2>      |   10.494|
+paddr<0>       |prdata<3>      |   10.494|
+paddr<0>       |prdata<4>      |   10.633|
+paddr<0>       |prdata<5>      |   10.127|
+paddr<0>       |prdata<6>      |   10.224|
+paddr<0>       |prdata<7>      |   10.224|
+paddr<0>       |prdata<8>      |   10.527|
+paddr<0>       |prdata<9>      |   10.527|
+paddr<0>       |prdata<10>     |    9.705|
+paddr<0>       |prdata<11>     |    9.705|
+paddr<0>       |prdata<12>     |   10.004|
+paddr<0>       |prdata<13>     |   10.004|
+paddr<0>       |prdata<14>     |   10.194|
+paddr<0>       |prdata<15>     |   10.194|
+paddr<0>       |prdata<16>     |   10.029|
+paddr<0>       |prdata<17>     |   10.029|
+paddr<0>       |prdata<18>     |   10.723|
+paddr<0>       |prdata<19>     |   10.723|
+paddr<0>       |prdata<20>     |   10.588|
+paddr<0>       |prdata<21>     |   10.588|
+paddr<0>       |prdata<22>     |   11.141|
+paddr<0>       |prdata<23>     |   11.141|
+paddr<0>       |prdata<24>     |   10.836|
+paddr<0>       |prdata<25>     |   10.836|
+paddr<0>       |prdata<26>     |   10.676|
+paddr<0>       |prdata<27>     |   10.676|
+paddr<0>       |prdata<28>     |   10.277|
+paddr<0>       |prdata<29>     |   10.277|
+paddr<0>       |prdata<30>     |    9.864|
+paddr<0>       |prdata<31>     |    9.864|
+paddr<1>       |prdata<0>      |   10.508|
+paddr<1>       |prdata<1>      |   10.405|
+paddr<1>       |prdata<2>      |   10.375|
+paddr<1>       |prdata<3>      |   10.375|
+paddr<1>       |prdata<4>      |   10.514|
+paddr<1>       |prdata<5>      |   10.008|
+paddr<1>       |prdata<6>      |   10.105|
+paddr<1>       |prdata<7>      |   10.105|
+paddr<1>       |prdata<8>      |   10.408|
+paddr<1>       |prdata<9>      |   10.408|
+paddr<1>       |prdata<10>     |    9.586|
+paddr<1>       |prdata<11>     |    9.586|
+paddr<1>       |prdata<12>     |    9.885|
+paddr<1>       |prdata<13>     |    9.885|
+paddr<1>       |prdata<14>     |   10.075|
+paddr<1>       |prdata<15>     |   10.075|
+paddr<1>       |prdata<16>     |    9.910|
+paddr<1>       |prdata<17>     |    9.910|
+paddr<1>       |prdata<18>     |   10.604|
+paddr<1>       |prdata<19>     |   10.604|
+paddr<1>       |prdata<20>     |   10.469|
+paddr<1>       |prdata<21>     |   10.469|
+paddr<1>       |prdata<22>     |   11.022|
+paddr<1>       |prdata<23>     |   11.022|
+paddr<1>       |prdata<24>     |   10.717|
+paddr<1>       |prdata<25>     |   10.717|
+paddr<1>       |prdata<26>     |   10.557|
+paddr<1>       |prdata<27>     |   10.557|
+paddr<1>       |prdata<28>     |   10.158|
+paddr<1>       |prdata<29>     |   10.158|
+paddr<1>       |prdata<30>     |    9.745|
+paddr<1>       |prdata<31>     |    9.745|
+paddr<2>       |prdata<0>      |   10.532|
+paddr<2>       |prdata<1>      |   10.429|
+paddr<2>       |prdata<2>      |   10.399|
+paddr<2>       |prdata<3>      |   10.399|
+paddr<2>       |prdata<4>      |   10.538|
+paddr<2>       |prdata<5>      |   10.032|
+paddr<2>       |prdata<6>      |   10.129|
+paddr<2>       |prdata<7>      |   10.129|
+paddr<2>       |prdata<8>      |   10.432|
+paddr<2>       |prdata<9>      |   10.432|
+paddr<2>       |prdata<10>     |    9.610|
+paddr<2>       |prdata<11>     |    9.610|
+paddr<2>       |prdata<12>     |    9.909|
+paddr<2>       |prdata<13>     |    9.909|
+paddr<2>       |prdata<14>     |   10.099|
+paddr<2>       |prdata<15>     |   10.099|
+paddr<2>       |prdata<16>     |    9.934|
+paddr<2>       |prdata<17>     |    9.934|
+paddr<2>       |prdata<18>     |   10.628|
+paddr<2>       |prdata<19>     |   10.628|
+paddr<2>       |prdata<20>     |   10.493|
+paddr<2>       |prdata<21>     |   10.493|
+paddr<2>       |prdata<22>     |   11.046|
+paddr<2>       |prdata<23>     |   11.046|
+paddr<2>       |prdata<24>     |   10.741|
+paddr<2>       |prdata<25>     |   10.741|
+paddr<2>       |prdata<26>     |   10.581|
+paddr<2>       |prdata<27>     |   10.581|
+paddr<2>       |prdata<28>     |   10.182|
+paddr<2>       |prdata<29>     |   10.182|
+paddr<2>       |prdata<30>     |    9.769|
+paddr<2>       |prdata<31>     |    9.769|
+paddr<3>       |prdata<0>      |    9.625|
+paddr<3>       |prdata<1>      |    9.522|
+paddr<3>       |prdata<2>      |    9.492|
+paddr<3>       |prdata<3>      |    9.492|
+paddr<3>       |prdata<4>      |    9.631|
+paddr<3>       |prdata<5>      |    9.125|
+paddr<3>       |prdata<6>      |    9.222|
+paddr<3>       |prdata<7>      |    9.222|
+paddr<3>       |prdata<8>      |    9.525|
+paddr<3>       |prdata<9>      |    9.525|
+paddr<3>       |prdata<10>     |    8.703|
+paddr<3>       |prdata<11>     |    8.703|
+paddr<3>       |prdata<12>     |    9.002|
+paddr<3>       |prdata<13>     |    9.002|
+paddr<3>       |prdata<14>     |    9.192|
+paddr<3>       |prdata<15>     |    9.192|
+paddr<3>       |prdata<16>     |    9.027|
+paddr<3>       |prdata<17>     |    9.027|
+paddr<3>       |prdata<18>     |    9.721|
+paddr<3>       |prdata<19>     |    9.721|
+paddr<3>       |prdata<20>     |    9.586|
+paddr<3>       |prdata<21>     |    9.586|
+paddr<3>       |prdata<22>     |   10.139|
+paddr<3>       |prdata<23>     |   10.139|
+paddr<3>       |prdata<24>     |    9.834|
+paddr<3>       |prdata<25>     |    9.834|
+paddr<3>       |prdata<26>     |    9.674|
+paddr<3>       |prdata<27>     |    9.674|
+paddr<3>       |prdata<28>     |    9.275|
+paddr<3>       |prdata<29>     |    9.275|
+paddr<3>       |prdata<30>     |    8.862|
+paddr<3>       |prdata<31>     |    8.862|
+paddr<4>       |prdata<0>      |   10.302|
+paddr<4>       |prdata<1>      |   10.199|
+paddr<4>       |prdata<2>      |   10.169|
+paddr<4>       |prdata<3>      |   10.169|
+paddr<4>       |prdata<4>      |   10.308|
+paddr<4>       |prdata<5>      |    9.802|
+paddr<4>       |prdata<6>      |    9.899|
+paddr<4>       |prdata<7>      |    9.899|
+paddr<4>       |prdata<8>      |   10.202|
+paddr<4>       |prdata<9>      |   10.202|
+paddr<4>       |prdata<10>     |    9.380|
+paddr<4>       |prdata<11>     |    9.380|
+paddr<4>       |prdata<12>     |    9.679|
+paddr<4>       |prdata<13>     |    9.679|
+paddr<4>       |prdata<14>     |    9.869|
+paddr<4>       |prdata<15>     |    9.869|
+paddr<4>       |prdata<16>     |    9.704|
+paddr<4>       |prdata<17>     |    9.704|
+paddr<4>       |prdata<18>     |   10.398|
+paddr<4>       |prdata<19>     |   10.398|
+paddr<4>       |prdata<20>     |   10.263|
+paddr<4>       |prdata<21>     |   10.263|
+paddr<4>       |prdata<22>     |   10.816|
+paddr<4>       |prdata<23>     |   10.816|
+paddr<4>       |prdata<24>     |   10.511|
+paddr<4>       |prdata<25>     |   10.511|
+paddr<4>       |prdata<26>     |   10.351|
+paddr<4>       |prdata<27>     |   10.351|
+paddr<4>       |prdata<28>     |    9.952|
+paddr<4>       |prdata<29>     |    9.952|
+paddr<4>       |prdata<30>     |    9.539|
+paddr<4>       |prdata<31>     |    9.539|
+paddr<5>       |prdata<0>      |   10.669|
+paddr<5>       |prdata<1>      |   10.566|
+paddr<5>       |prdata<2>      |   10.536|
+paddr<5>       |prdata<3>      |   10.536|
+paddr<5>       |prdata<4>      |   10.675|
+paddr<5>       |prdata<5>      |   10.169|
+paddr<5>       |prdata<6>      |   10.266|
+paddr<5>       |prdata<7>      |   10.266|
+paddr<5>       |prdata<8>      |   10.569|
+paddr<5>       |prdata<9>      |   10.569|
+paddr<5>       |prdata<10>     |    9.747|
+paddr<5>       |prdata<11>     |    9.747|
+paddr<5>       |prdata<12>     |   10.046|
+paddr<5>       |prdata<13>     |   10.046|
+paddr<5>       |prdata<14>     |   10.236|
+paddr<5>       |prdata<15>     |   10.236|
+paddr<5>       |prdata<16>     |   10.071|
+paddr<5>       |prdata<17>     |   10.071|
+paddr<5>       |prdata<18>     |   10.765|
+paddr<5>       |prdata<19>     |   10.765|
+paddr<5>       |prdata<20>     |   10.630|
+paddr<5>       |prdata<21>     |   10.630|
+paddr<5>       |prdata<22>     |   11.183|
+paddr<5>       |prdata<23>     |   11.183|
+paddr<5>       |prdata<24>     |   10.878|
+paddr<5>       |prdata<25>     |   10.878|
+paddr<5>       |prdata<26>     |   10.718|
+paddr<5>       |prdata<27>     |   10.718|
+paddr<5>       |prdata<28>     |   10.319|
+paddr<5>       |prdata<29>     |   10.319|
+paddr<5>       |prdata<30>     |    9.906|
+paddr<5>       |prdata<31>     |    9.906|
+paddr<6>       |prdata<0>      |   10.627|
+paddr<6>       |prdata<1>      |   10.524|
+paddr<6>       |prdata<2>      |   10.494|
+paddr<6>       |prdata<3>      |   10.494|
+paddr<6>       |prdata<4>      |   10.633|
+paddr<6>       |prdata<5>      |   10.127|
+paddr<6>       |prdata<6>      |   10.224|
+paddr<6>       |prdata<7>      |   10.224|
+paddr<6>       |prdata<8>      |   10.527|
+paddr<6>       |prdata<9>      |   10.527|
+paddr<6>       |prdata<10>     |    9.705|
+paddr<6>       |prdata<11>     |    9.705|
+paddr<6>       |prdata<12>     |   10.004|
+paddr<6>       |prdata<13>     |   10.004|
+paddr<6>       |prdata<14>     |   10.194|
+paddr<6>       |prdata<15>     |   10.194|
+paddr<6>       |prdata<16>     |   10.029|
+paddr<6>       |prdata<17>     |   10.029|
+paddr<6>       |prdata<18>     |   10.723|
+paddr<6>       |prdata<19>     |   10.723|
+paddr<6>       |prdata<20>     |   10.588|
+paddr<6>       |prdata<21>     |   10.588|
+paddr<6>       |prdata<22>     |   11.141|
+paddr<6>       |prdata<23>     |   11.141|
+paddr<6>       |prdata<24>     |   10.836|
+paddr<6>       |prdata<25>     |   10.836|
+paddr<6>       |prdata<26>     |   10.676|
+paddr<6>       |prdata<27>     |   10.676|
+paddr<6>       |prdata<28>     |   10.277|
+paddr<6>       |prdata<29>     |   10.277|
+paddr<6>       |prdata<30>     |    9.864|
+paddr<6>       |prdata<31>     |    9.864|
+paddr<7>       |prdata<0>      |   10.685|
+paddr<7>       |prdata<1>      |   10.582|
+paddr<7>       |prdata<2>      |   10.552|
+paddr<7>       |prdata<3>      |   10.552|
+paddr<7>       |prdata<4>      |   10.691|
+paddr<7>       |prdata<5>      |   10.185|
+paddr<7>       |prdata<6>      |   10.282|
+paddr<7>       |prdata<7>      |   10.282|
+paddr<7>       |prdata<8>      |   10.585|
+paddr<7>       |prdata<9>      |   10.585|
+paddr<7>       |prdata<10>     |    9.763|
+paddr<7>       |prdata<11>     |    9.763|
+paddr<7>       |prdata<12>     |   10.062|
+paddr<7>       |prdata<13>     |   10.062|
+paddr<7>       |prdata<14>     |   10.252|
+paddr<7>       |prdata<15>     |   10.252|
+paddr<7>       |prdata<16>     |   10.087|
+paddr<7>       |prdata<17>     |   10.087|
+paddr<7>       |prdata<18>     |   10.781|
+paddr<7>       |prdata<19>     |   10.781|
+paddr<7>       |prdata<20>     |   10.646|
+paddr<7>       |prdata<21>     |   10.646|
+paddr<7>       |prdata<22>     |   11.199|
+paddr<7>       |prdata<23>     |   11.199|
+paddr<7>       |prdata<24>     |   10.894|
+paddr<7>       |prdata<25>     |   10.894|
+paddr<7>       |prdata<26>     |   10.734|
+paddr<7>       |prdata<27>     |   10.734|
+paddr<7>       |prdata<28>     |   10.335|
+paddr<7>       |prdata<29>     |   10.335|
+paddr<7>       |prdata<30>     |    9.922|
+paddr<7>       |prdata<31>     |    9.922|
+paddr<8>       |prdata<0>      |   11.381|
+paddr<8>       |prdata<1>      |   11.278|
+paddr<8>       |prdata<2>      |   11.248|
+paddr<8>       |prdata<3>      |   11.248|
+paddr<8>       |prdata<4>      |   11.387|
+paddr<8>       |prdata<5>      |   10.881|
+paddr<8>       |prdata<6>      |   10.978|
+paddr<8>       |prdata<7>      |   10.978|
+paddr<8>       |prdata<8>      |   11.281|
+paddr<8>       |prdata<9>      |   11.281|
+paddr<8>       |prdata<10>     |   10.459|
+paddr<8>       |prdata<11>     |   10.459|
+paddr<8>       |prdata<12>     |   10.758|
+paddr<8>       |prdata<13>     |   10.758|
+paddr<8>       |prdata<14>     |   10.948|
+paddr<8>       |prdata<15>     |   10.948|
+paddr<8>       |prdata<16>     |   10.783|
+paddr<8>       |prdata<17>     |   10.783|
+paddr<8>       |prdata<18>     |   11.477|
+paddr<8>       |prdata<19>     |   11.477|
+paddr<8>       |prdata<20>     |   11.342|
+paddr<8>       |prdata<21>     |   11.342|
+paddr<8>       |prdata<22>     |   11.895|
+paddr<8>       |prdata<23>     |   11.895|
+paddr<8>       |prdata<24>     |   11.590|
+paddr<8>       |prdata<25>     |   11.590|
+paddr<8>       |prdata<26>     |   11.430|
+paddr<8>       |prdata<27>     |   11.430|
+paddr<8>       |prdata<28>     |   11.031|
+paddr<8>       |prdata<29>     |   11.031|
+paddr<8>       |prdata<30>     |   10.618|
+paddr<8>       |prdata<31>     |   10.618|
+paddr<9>       |prdata<0>      |   11.338|
+paddr<9>       |prdata<1>      |   11.235|
+paddr<9>       |prdata<2>      |   11.205|
+paddr<9>       |prdata<3>      |   11.205|
+paddr<9>       |prdata<4>      |   11.344|
+paddr<9>       |prdata<5>      |   10.838|
+paddr<9>       |prdata<6>      |   10.935|
+paddr<9>       |prdata<7>      |   10.935|
+paddr<9>       |prdata<8>      |   11.238|
+paddr<9>       |prdata<9>      |   11.238|
+paddr<9>       |prdata<10>     |   10.416|
+paddr<9>       |prdata<11>     |   10.416|
+paddr<9>       |prdata<12>     |   10.715|
+paddr<9>       |prdata<13>     |   10.715|
+paddr<9>       |prdata<14>     |   10.905|
+paddr<9>       |prdata<15>     |   10.905|
+paddr<9>       |prdata<16>     |   10.740|
+paddr<9>       |prdata<17>     |   10.740|
+paddr<9>       |prdata<18>     |   11.434|
+paddr<9>       |prdata<19>     |   11.434|
+paddr<9>       |prdata<20>     |   11.299|
+paddr<9>       |prdata<21>     |   11.299|
+paddr<9>       |prdata<22>     |   11.852|
+paddr<9>       |prdata<23>     |   11.852|
+paddr<9>       |prdata<24>     |   11.547|
+paddr<9>       |prdata<25>     |   11.547|
+paddr<9>       |prdata<26>     |   11.387|
+paddr<9>       |prdata<27>     |   11.387|
+paddr<9>       |prdata<28>     |   10.988|
+paddr<9>       |prdata<29>     |   10.988|
+paddr<9>       |prdata<30>     |   10.575|
+paddr<9>       |prdata<31>     |   10.575|
+paddr<10>      |prdata<0>      |   11.829|
+paddr<10>      |prdata<1>      |   11.726|
+paddr<10>      |prdata<2>      |   11.696|
+paddr<10>      |prdata<3>      |   11.696|
+paddr<10>      |prdata<4>      |   11.835|
+paddr<10>      |prdata<5>      |   11.329|
+paddr<10>      |prdata<6>      |   11.426|
+paddr<10>      |prdata<7>      |   11.426|
+paddr<10>      |prdata<8>      |   11.729|
+paddr<10>      |prdata<9>      |   11.729|
+paddr<10>      |prdata<10>     |   10.907|
+paddr<10>      |prdata<11>     |   10.907|
+paddr<10>      |prdata<12>     |   11.206|
+paddr<10>      |prdata<13>     |   11.206|
+paddr<10>      |prdata<14>     |   11.396|
+paddr<10>      |prdata<15>     |   11.396|
+paddr<10>      |prdata<16>     |   11.231|
+paddr<10>      |prdata<17>     |   11.231|
+paddr<10>      |prdata<18>     |   11.925|
+paddr<10>      |prdata<19>     |   11.925|
+paddr<10>      |prdata<20>     |   11.790|
+paddr<10>      |prdata<21>     |   11.790|
+paddr<10>      |prdata<22>     |   12.343|
+paddr<10>      |prdata<23>     |   12.343|
+paddr<10>      |prdata<24>     |   12.038|
+paddr<10>      |prdata<25>     |   12.038|
+paddr<10>      |prdata<26>     |   11.878|
+paddr<10>      |prdata<27>     |   11.878|
+paddr<10>      |prdata<28>     |   11.479|
+paddr<10>      |prdata<29>     |   11.479|
+paddr<10>      |prdata<30>     |   11.066|
+paddr<10>      |prdata<31>     |   11.066|
+paddr<11>      |prdata<0>      |   11.506|
+paddr<11>      |prdata<1>      |   11.403|
+paddr<11>      |prdata<2>      |   11.373|
+paddr<11>      |prdata<3>      |   11.373|
+paddr<11>      |prdata<4>      |   11.512|
+paddr<11>      |prdata<5>      |   11.006|
+paddr<11>      |prdata<6>      |   11.103|
+paddr<11>      |prdata<7>      |   11.103|
+paddr<11>      |prdata<8>      |   11.406|
+paddr<11>      |prdata<9>      |   11.406|
+paddr<11>      |prdata<10>     |   10.584|
+paddr<11>      |prdata<11>     |   10.584|
+paddr<11>      |prdata<12>     |   10.883|
+paddr<11>      |prdata<13>     |   10.883|
+paddr<11>      |prdata<14>     |   11.073|
+paddr<11>      |prdata<15>     |   11.073|
+paddr<11>      |prdata<16>     |   10.908|
+paddr<11>      |prdata<17>     |   10.908|
+paddr<11>      |prdata<18>     |   11.602|
+paddr<11>      |prdata<19>     |   11.602|
+paddr<11>      |prdata<20>     |   11.467|
+paddr<11>      |prdata<21>     |   11.467|
+paddr<11>      |prdata<22>     |   12.020|
+paddr<11>      |prdata<23>     |   12.020|
+paddr<11>      |prdata<24>     |   11.715|
+paddr<11>      |prdata<25>     |   11.715|
+paddr<11>      |prdata<26>     |   11.555|
+paddr<11>      |prdata<27>     |   11.555|
+paddr<11>      |prdata<28>     |   11.156|
+paddr<11>      |prdata<29>     |   11.156|
+paddr<11>      |prdata<30>     |   10.743|
+paddr<11>      |prdata<31>     |   10.743|
+paddr<12>      |prdata<0>      |   12.094|
+paddr<12>      |prdata<1>      |   11.991|
+paddr<12>      |prdata<2>      |   11.961|
+paddr<12>      |prdata<3>      |   11.961|
+paddr<12>      |prdata<4>      |   12.100|
+paddr<12>      |prdata<5>      |   11.594|
+paddr<12>      |prdata<6>      |   11.691|
+paddr<12>      |prdata<7>      |   11.691|
+paddr<12>      |prdata<8>      |   11.994|
+paddr<12>      |prdata<9>      |   11.994|
+paddr<12>      |prdata<10>     |   11.172|
+paddr<12>      |prdata<11>     |   11.172|
+paddr<12>      |prdata<12>     |   11.471|
+paddr<12>      |prdata<13>     |   11.471|
+paddr<12>      |prdata<14>     |   11.661|
+paddr<12>      |prdata<15>     |   11.661|
+paddr<12>      |prdata<16>     |   11.496|
+paddr<12>      |prdata<17>     |   11.496|
+paddr<12>      |prdata<18>     |   12.190|
+paddr<12>      |prdata<19>     |   12.190|
+paddr<12>      |prdata<20>     |   12.055|
+paddr<12>      |prdata<21>     |   12.055|
+paddr<12>      |prdata<22>     |   12.608|
+paddr<12>      |prdata<23>     |   12.608|
+paddr<12>      |prdata<24>     |   12.303|
+paddr<12>      |prdata<25>     |   12.303|
+paddr<12>      |prdata<26>     |   12.143|
+paddr<12>      |prdata<27>     |   12.143|
+paddr<12>      |prdata<28>     |   11.744|
+paddr<12>      |prdata<29>     |   11.744|
+paddr<12>      |prdata<30>     |   11.331|
+paddr<12>      |prdata<31>     |   11.331|
+paddr<13>      |prdata<0>      |   10.646|
+paddr<13>      |prdata<1>      |   10.543|
+paddr<13>      |prdata<2>      |   10.513|
+paddr<13>      |prdata<3>      |   10.513|
+paddr<13>      |prdata<4>      |   10.652|
+paddr<13>      |prdata<5>      |   10.146|
+paddr<13>      |prdata<6>      |   10.243|
+paddr<13>      |prdata<7>      |   10.243|
+paddr<13>      |prdata<8>      |   10.546|
+paddr<13>      |prdata<9>      |   10.546|
+paddr<13>      |prdata<10>     |    9.724|
+paddr<13>      |prdata<11>     |    9.724|
+paddr<13>      |prdata<12>     |   10.023|
+paddr<13>      |prdata<13>     |   10.023|
+paddr<13>      |prdata<14>     |   10.213|
+paddr<13>      |prdata<15>     |   10.213|
+paddr<13>      |prdata<16>     |   10.048|
+paddr<13>      |prdata<17>     |   10.048|
+paddr<13>      |prdata<18>     |   10.742|
+paddr<13>      |prdata<19>     |   10.742|
+paddr<13>      |prdata<20>     |   10.607|
+paddr<13>      |prdata<21>     |   10.607|
+paddr<13>      |prdata<22>     |   11.160|
+paddr<13>      |prdata<23>     |   11.160|
+paddr<13>      |prdata<24>     |   10.855|
+paddr<13>      |prdata<25>     |   10.855|
+paddr<13>      |prdata<26>     |   10.695|
+paddr<13>      |prdata<27>     |   10.695|
+paddr<13>      |prdata<28>     |   10.296|
+paddr<13>      |prdata<29>     |   10.296|
+paddr<13>      |prdata<30>     |    9.883|
+paddr<13>      |prdata<31>     |    9.883|
+paddr<14>      |prdata<0>      |   11.698|
+paddr<14>      |prdata<1>      |   11.595|
+paddr<14>      |prdata<2>      |   11.565|
+paddr<14>      |prdata<3>      |   11.565|
+paddr<14>      |prdata<4>      |   11.704|
+paddr<14>      |prdata<5>      |   11.198|
+paddr<14>      |prdata<6>      |   11.295|
+paddr<14>      |prdata<7>      |   11.295|
+paddr<14>      |prdata<8>      |   11.598|
+paddr<14>      |prdata<9>      |   11.598|
+paddr<14>      |prdata<10>     |   10.776|
+paddr<14>      |prdata<11>     |   10.776|
+paddr<14>      |prdata<12>     |   11.075|
+paddr<14>      |prdata<13>     |   11.075|
+paddr<14>      |prdata<14>     |   11.265|
+paddr<14>      |prdata<15>     |   11.265|
+paddr<14>      |prdata<16>     |   11.100|
+paddr<14>      |prdata<17>     |   11.100|
+paddr<14>      |prdata<18>     |   11.794|
+paddr<14>      |prdata<19>     |   11.794|
+paddr<14>      |prdata<20>     |   11.659|
+paddr<14>      |prdata<21>     |   11.659|
+paddr<14>      |prdata<22>     |   12.212|
+paddr<14>      |prdata<23>     |   12.212|
+paddr<14>      |prdata<24>     |   11.907|
+paddr<14>      |prdata<25>     |   11.907|
+paddr<14>      |prdata<26>     |   11.747|
+paddr<14>      |prdata<27>     |   11.747|
+paddr<14>      |prdata<28>     |   11.348|
+paddr<14>      |prdata<29>     |   11.348|
+paddr<14>      |prdata<30>     |   10.935|
+paddr<14>      |prdata<31>     |   10.935|
+paddr<15>      |prdata<0>      |   11.592|
+paddr<15>      |prdata<1>      |   11.489|
+paddr<15>      |prdata<2>      |   11.459|
+paddr<15>      |prdata<3>      |   11.459|
+paddr<15>      |prdata<4>      |   11.598|
+paddr<15>      |prdata<5>      |   11.092|
+paddr<15>      |prdata<6>      |   11.189|
+paddr<15>      |prdata<7>      |   11.189|
+paddr<15>      |prdata<8>      |   11.492|
+paddr<15>      |prdata<9>      |   11.492|
+paddr<15>      |prdata<10>     |   10.670|
+paddr<15>      |prdata<11>     |   10.670|
+paddr<15>      |prdata<12>     |   10.969|
+paddr<15>      |prdata<13>     |   10.969|
+paddr<15>      |prdata<14>     |   11.159|
+paddr<15>      |prdata<15>     |   11.159|
+paddr<15>      |prdata<16>     |   10.994|
+paddr<15>      |prdata<17>     |   10.994|
+paddr<15>      |prdata<18>     |   11.688|
+paddr<15>      |prdata<19>     |   11.688|
+paddr<15>      |prdata<20>     |   11.553|
+paddr<15>      |prdata<21>     |   11.553|
+paddr<15>      |prdata<22>     |   12.106|
+paddr<15>      |prdata<23>     |   12.106|
+paddr<15>      |prdata<24>     |   11.801|
+paddr<15>      |prdata<25>     |   11.801|
+paddr<15>      |prdata<26>     |   11.641|
+paddr<15>      |prdata<27>     |   11.641|
+paddr<15>      |prdata<28>     |   11.242|
+paddr<15>      |prdata<29>     |   11.242|
+paddr<15>      |prdata<30>     |   10.829|
+paddr<15>      |prdata<31>     |   10.829|
+penable        |prdata<0>      |   10.117|
+penable        |prdata<1>      |   10.014|
+penable        |prdata<2>      |    9.984|
+penable        |prdata<3>      |    9.984|
+penable        |prdata<4>      |   10.123|
+penable        |prdata<5>      |    9.617|
+penable        |prdata<6>      |    9.714|
+penable        |prdata<7>      |    9.714|
+penable        |prdata<8>      |   10.017|
+penable        |prdata<9>      |   10.017|
+penable        |prdata<10>     |    9.195|
+penable        |prdata<11>     |    9.195|
+penable        |prdata<12>     |    9.494|
+penable        |prdata<13>     |    9.494|
+penable        |prdata<14>     |    9.684|
+penable        |prdata<15>     |    9.684|
+penable        |prdata<16>     |    9.519|
+penable        |prdata<17>     |    9.519|
+penable        |prdata<18>     |   10.213|
+penable        |prdata<19>     |   10.213|
+penable        |prdata<20>     |   10.078|
+penable        |prdata<21>     |   10.078|
+penable        |prdata<22>     |   10.631|
+penable        |prdata<23>     |   10.631|
+penable        |prdata<24>     |   10.326|
+penable        |prdata<25>     |   10.326|
+penable        |prdata<26>     |   10.166|
+penable        |prdata<27>     |   10.166|
+penable        |prdata<28>     |    9.767|
+penable        |prdata<29>     |    9.767|
+penable        |prdata<30>     |    9.354|
+penable        |prdata<31>     |    9.354|
+penable        |pready         |    7.636|
+psel           |prdata<0>      |   10.212|
+psel           |prdata<1>      |   10.109|
+psel           |prdata<2>      |   10.079|
+psel           |prdata<3>      |   10.079|
+psel           |prdata<4>      |   10.218|
+psel           |prdata<5>      |    9.712|
+psel           |prdata<6>      |    9.809|
+psel           |prdata<7>      |    9.809|
+psel           |prdata<8>      |   10.112|
+psel           |prdata<9>      |   10.112|
+psel           |prdata<10>     |    9.290|
+psel           |prdata<11>     |    9.290|
+psel           |prdata<12>     |    9.589|
+psel           |prdata<13>     |    9.589|
+psel           |prdata<14>     |    9.779|
+psel           |prdata<15>     |    9.779|
+psel           |prdata<16>     |    9.614|
+psel           |prdata<17>     |    9.614|
+psel           |prdata<18>     |   10.308|
+psel           |prdata<19>     |   10.308|
+psel           |prdata<20>     |   10.173|
+psel           |prdata<21>     |   10.173|
+psel           |prdata<22>     |   10.726|
+psel           |prdata<23>     |   10.726|
+psel           |prdata<24>     |   10.421|
+psel           |prdata<25>     |   10.421|
+psel           |prdata<26>     |   10.261|
+psel           |prdata<27>     |   10.261|
+psel           |prdata<28>     |    9.862|
+psel           |prdata<29>     |    9.862|
+psel           |prdata<30>     |    9.449|
+psel           |prdata<31>     |    9.449|
+psel           |pready         |    7.731|
+pwrite         |prdata<0>      |   10.762|
+pwrite         |prdata<1>      |   10.659|
+pwrite         |prdata<2>      |   10.629|
+pwrite         |prdata<3>      |   10.629|
+pwrite         |prdata<4>      |   10.768|
+pwrite         |prdata<5>      |   10.262|
+pwrite         |prdata<6>      |   10.359|
+pwrite         |prdata<7>      |   10.359|
+pwrite         |prdata<8>      |   10.662|
+pwrite         |prdata<9>      |   10.662|
+pwrite         |prdata<10>     |    9.840|
+pwrite         |prdata<11>     |    9.840|
+pwrite         |prdata<12>     |   10.139|
+pwrite         |prdata<13>     |   10.139|
+pwrite         |prdata<14>     |   10.329|
+pwrite         |prdata<15>     |   10.329|
+pwrite         |prdata<16>     |   10.164|
+pwrite         |prdata<17>     |   10.164|
+pwrite         |prdata<18>     |   10.858|
+pwrite         |prdata<19>     |   10.858|
+pwrite         |prdata<20>     |   10.723|
+pwrite         |prdata<21>     |   10.723|
+pwrite         |prdata<22>     |   11.276|
+pwrite         |prdata<23>     |   11.276|
+pwrite         |prdata<24>     |   10.971|
+pwrite         |prdata<25>     |   10.971|
+pwrite         |prdata<26>     |   10.811|
+pwrite         |prdata<27>     |   10.811|
+pwrite         |prdata<28>     |   10.412|
+pwrite         |prdata<29>     |   10.412|
+pwrite         |prdata<30>     |    9.999|
+pwrite         |prdata<31>     |    9.999|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Jun 09 14:47:55 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 139 MB
+
+
+

@@ -1,0 +1,22 @@
+xst -intstyle ise -ifn "Y:/ambaspi/apb_spi.xst" -ofn "Y:/ambaspi/apb_spi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 apb_spi.ngc apb_spi.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o apb_spi_map.ncd apb_spi.ngd apb_spi.pcf 
+par -w -intstyle ise -ol high -mt off apb_spi_map.ncd apb_spi.ncd apb_spi.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml apb_spi.twx apb_spi.ncd -o apb_spi.twr apb_spi.pcf 
+xst -intstyle ise -ifn "Y:/ambaspi/apb_spi.xst" -ofn "Y:/ambaspi/apb_spi.syr" 
+xst -intstyle ise -ifn "Y:/ambaspi/apb_spi.xst" -ofn "Y:/ambaspi/apb_spi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 apb_spi.ngc apb_spi.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o apb_spi_map.ncd apb_spi.ngd apb_spi.pcf 
+par -w -intstyle ise -ol high -mt off apb_spi_map.ncd apb_spi.ncd apb_spi.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml apb_spi.twx apb_spi.ncd -o apb_spi.twr apb_spi.pcf 
+xst -intstyle ise -ifn "Y:/ambaspi/apb_spi.xst" -ofn "Y:/ambaspi/apb_spi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 apb_spi.ngc apb_spi.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o apb_spi_map.ncd apb_spi.ngd apb_spi.pcf 
+par -w -intstyle ise -ol high -mt off apb_spi_map.ncd apb_spi.ncd apb_spi.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml apb_spi.twx apb_spi.ncd -o apb_spi.twr apb_spi.pcf 
+xst -intstyle ise -ifn "Y:/ambaspi/apb_spi.xst" -ofn "Y:/ambaspi/apb_spi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 apb_spi.ngc apb_spi.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o apb_spi_map.ncd apb_spi.ngd apb_spi.pcf 
+par -w -intstyle ise -ol high -mt off apb_spi_map.ncd apb_spi.ncd apb_spi.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml apb_spi.twx apb_spi.ncd -o apb_spi.twr apb_spi.pcf 
+xst -intstyle ise -ifn "Y:/ambaspi/apb_spi.xst" -ofn "Y:/ambaspi/apb_spi.syr" 

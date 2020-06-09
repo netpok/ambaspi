@@ -1,0 +1,4 @@
+verilog work "spi_shr.v"
+verilog work "config.v"
+verilog work "spi_if.v"
+verilog work "apb_spi.v"

@@ -1,0 +1,26 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o Y:/ambaspi/tb_top_isim_beh.exe -prj Y:/ambaspi/tb_top_beh.prj work.tb_top work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Analyzing Verilog file "Y:/ambaspi/spi_shr.v" into library work
+Analyzing Verilog file "Y:/ambaspi/config.v" into library work
+Analyzing Verilog file "Y:/ambaspi/spi_if.v" into library work
+Analyzing Verilog file "Y:/ambaspi/apb_spi.v" into library work
+Analyzing Verilog file "Y:/ambaspi/tb_top.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 77332 KB
+Fuse CPU Usage: 170 ms
+Compiling module cfg
+Compiling module spi_shr
+Compiling module spi_if
+Compiling module apb_spi
+Compiling module tb_top
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 6 Verilog Units
+Built simulation executable Y:/ambaspi/tb_top_isim_beh.exe
+Fuse Memory Usage: 81816 KB
+Fuse CPU Usage: 170 ms
