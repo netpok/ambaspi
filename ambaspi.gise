@@ -49,6 +49,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="apb_spi.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="apb_spi_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="apb_spi_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="apb_spi_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="apb_spi_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="apb_spi_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="apb_spi_map.ncd" xil_pn:subbranch="Map"/>
@@ -58,6 +59,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="apb_spi_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="apb_spi_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="apb_spi_par.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="apb_spi_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="apb_spi_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="apb_spi_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="apb_spi_usage.xml"/>
@@ -112,17 +114,13 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1591740164" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1591740164">
+    <transform xil_pn:end_ts="1591778007" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1591778007">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1591740165" xil_pn:in_ck="3036099161427437525" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1591740164">
+    <transform xil_pn:end_ts="1591781499" xil_pn:in_ck="3036099161427437525" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1591781499">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="apb_spi.v"/>
       <outfile xil_pn:name="config.v"/>
       <outfile xil_pn:name="spi_if.v"/>
@@ -130,26 +128,21 @@
       <outfile xil_pn:name="tb_spi_if.v"/>
       <outfile xil_pn:name="tb_top.v"/>
     </transform>
-    <transform xil_pn:end_ts="1591740165" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6879190067049745569" xil_pn:start_ts="1591740165">
+    <transform xil_pn:end_ts="1591781512" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6879190067049745569" xil_pn:start_ts="1591781512">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1591740165" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5575208799625172707" xil_pn:start_ts="1591740165">
+    <transform xil_pn:end_ts="1591781512" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5575208799625172707" xil_pn:start_ts="1591781512">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1591740165" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-2767548318974368605" xil_pn:start_ts="1591740165">
+    <transform xil_pn:end_ts="1591778007" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-2767548318974368605" xil_pn:start_ts="1591778007">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1591740165" xil_pn:in_ck="3036099161427437525" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1591740165">
+    <transform xil_pn:end_ts="1591781499" xil_pn:in_ck="3036099161427437525" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1591781499">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="apb_spi.v"/>
       <outfile xil_pn:name="config.v"/>
       <outfile xil_pn:name="spi_if.v"/>
@@ -157,14 +150,10 @@
       <outfile xil_pn:name="tb_spi_if.v"/>
       <outfile xil_pn:name="tb_top.v"/>
     </transform>
-    <transform xil_pn:end_ts="1591740166" xil_pn:in_ck="3036099161427437525" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5173850777941120829" xil_pn:start_ts="1591740165">
+    <transform xil_pn:end_ts="1591781514" xil_pn:in_ck="3036099161427437525" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5173850777941120829" xil_pn:start_ts="1591781512">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
@@ -173,13 +162,9 @@
       <outfile xil_pn:name="tb_top_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1591740166" xil_pn:in_ck="-3688272852740557026" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1440997860442329728" xil_pn:start_ts="1591740166">
+    <transform xil_pn:end_ts="1591781514" xil_pn:in_ck="7950720785018831467" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1440997860442329728" xil_pn:start_ts="1591781514">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="tb_top_isim_beh.wdb"/>
@@ -216,6 +201,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="apb_spi.lso"/>
       <outfile xil_pn:name="apb_spi.ngc"/>
@@ -237,6 +224,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>

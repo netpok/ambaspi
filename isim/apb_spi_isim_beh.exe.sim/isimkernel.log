@@ -1,0 +1,29 @@
+Command line:
+   apb_spi_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1232
+
+Wed Jun 10 02:31:41 2020
+
+
+ Elaboration Time: 0.030044 sec
+
+ Current Memory Usage: 480.403 Meg
+
+ Total Signals          : 73
+ Total Nets             : 153
+ Total Signal Drivers   : 27
+ Total Blocks           : 5
+ Total Primitive Blocks : 3
+ Total Processes        : 33
+ Total Traceable Variables  : 31
+ Total Scalar Nets and Variables : 340
+Total Line Count : 86
+
+ Total Simulation Time: 0.070101 sec
+
+ Current Memory Usage: 323.117 Meg
+
+Wed Jun 10 02:31:47 2020
+

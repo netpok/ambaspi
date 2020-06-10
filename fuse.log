@@ -12,7 +12,7 @@ Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into libr
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 77332 KB
-Fuse CPU Usage: 170 ms
+Fuse CPU Usage: 150 ms
 Compiling module cfg
 Compiling module spi_shr
 Compiling module spi_if
@@ -23,4 +23,4 @@ Time Resolution for simulation is 1ps.
 Compiled 6 Verilog Units
 Built simulation executable Y:/ambaspi/tb_top_isim_beh.exe
 Fuse Memory Usage: 81816 KB
-Fuse CPU Usage: 170 ms
+Fuse CPU Usage: 180 ms

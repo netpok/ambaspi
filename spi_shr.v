@@ -11,7 +11,7 @@ module spi_shr(
     input [7:0] dout
     );
 
-reg [8:0] shr;
+reg [7:0] shr;
 
 always @ (posedge clk)
 begin

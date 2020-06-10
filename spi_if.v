@@ -1,23 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    06:26:07 06/09/2020 
-// Design Name: 
-// Module Name:    spi_if 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
+
 module spi_if(
 	input clk,
 	input rst,
@@ -41,7 +23,7 @@ module spi_if(
 reg csn;
 wire shift;
 
-wire [2:0] clk_div;
+wire [1:0] clk_div;
 wire irq_en;
 wire [1:0] cs_sel;
 wire [1:0] mode;
@@ -53,7 +35,7 @@ reg clock_last;
 
 always @(posedge clk)
 begin
-	if (rst)
+	if (rst | cmd)
 		clock_cntr <= 0;
 	else
 		clock_cntr <= clock_cntr + 1;
@@ -63,7 +45,7 @@ assign clock = clock_cntr[clk_div];
 
 always @(posedge clk)
 begin
-	if (rst)
+	if (rst | cmd)
 		clock_last <= 0;
 	else
 		clock_last <= clock;
@@ -96,11 +78,11 @@ spi_shr shr (
 	.out(mosi)	
 );
 
-reg [3:0] state;
-parameter S_IDLE     = 4'b0000;   // Idle
-parameter S_START    = 4'b0001;   // Start transmission
-parameter S_TRANSMIT = 4'b0010;   // 1st byte on output ...
-parameter S_DONE     = 4'b0011;   // ... 8th byte on output
+reg [1:0] state;
+parameter S_IDLE     = 2'b00;   // Idle
+parameter S_START    = 2'b01;   // Start transmission
+parameter S_TRANSMIT = 2'b10;   // 1st byte on output ...
+parameter S_DONE     = 2'b11;   // ... 8th byte on output
 
 always @ (posedge clk)
 begin

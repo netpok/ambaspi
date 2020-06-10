@@ -3,7 +3,7 @@ module apb_spi(
     input pclk,
     input prst,
     input psel,
-    input [15:0] paddr,
+    input [31:0] paddr,
     input penable,
     input pwrite,
     input [31:0] pwdata,
@@ -48,9 +48,9 @@ parameter CMD_ADDR = 2;
 
 assign din = pwdata[7:0];
 assign rd = (~pwrite & psel & paddr == DATA_ADDR & penable);
-assign prdata = rd ? {24'b0, dout[7:0]} : 32'bZ;
+assign prdata = rd ? {24'b0, dout[7:0]} : 32'b0;
 assign wr = (pwrite & psel & paddr == DATA_ADDR & penable);
-assign cmd = (pwrite & psel & paddr == DATA_ADDR & penable);
+assign cmd = (pwrite & psel & paddr == CMD_ADDR & penable);
 assign pready = psel & penable;
 
 endmodule

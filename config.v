@@ -6,7 +6,7 @@ module cfg(
 	 
     input [7:0] din,
     input cmd,
-    output [2:0] clk_div,
+    output [1:0] clk_div,
     output irq_en,
     output [1:0] cs_sel,
     output [1:0] mode
@@ -22,7 +22,7 @@ begin
 	   cfg_reg <= din;
 end
 
-assign clk_div = cfg_reg[7:5];
+assign clk_div = cfg_reg[6:5];
 assign irq_en  = cfg_reg[4];
 assign cs_sel  = cfg_reg[3:2];
 assign mode    = cfg_reg[1:0];
